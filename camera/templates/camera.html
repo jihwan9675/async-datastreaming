@@ -1,0 +1,5 @@
+{% load webcam %}
+
+{% url "picture-mgm" object.pk as picmgm %}
+{% url "camera" object.picture as default_image %}
+{% camera  picmgm default_image %}
